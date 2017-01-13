@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: com.library.app.category.repository.CategoryRepositoryUTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.199 sec <<< FAILURE! - in com.library.app.category.repository.CategoryRepositoryUTest
+addCategoryAndFindIt(com.library.app.category.repository.CategoryRepositoryUTest)  Time elapsed: 1.198 sec  <<< ERROR!
+java.lang.IllegalArgumentException: id to load is required for loading
+	at org.hibernate.event.spi.LoadEvent.<init>(LoadEvent.java:109)
+	at org.hibernate.event.spi.LoadEvent.<init>(LoadEvent.java:79)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.load(SessionImpl.java:2548)
+	at org.hibernate.internal.SessionImpl.get(SessionImpl.java:955)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.find(AbstractEntityManagerImpl.java:1110)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.find(AbstractEntityManagerImpl.java:1068)
+	at com.library.app.category.repository.CategoryRepository.findById(CategoryRepository.java:17)
+	at com.library.app.category.repository.CategoryRepositoryUTest.addCategoryAndFindIt(CategoryRepositoryUTest.java:46)
+
