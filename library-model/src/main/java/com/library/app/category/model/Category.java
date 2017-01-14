@@ -62,6 +62,11 @@ public class Category implements Serializable {
 		return id;
 	}
 
+	@Override
+	public String toString() {
+		return "Category [id=" + id + ", name=" + name + "]";
+	}
+
 	public void setId(final Long id) {
 		this.id = id;
 	}
