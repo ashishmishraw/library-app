@@ -1,6 +1,6 @@
 *.class
 *target*
-library-model/target/*
+*library-model/target/*
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
